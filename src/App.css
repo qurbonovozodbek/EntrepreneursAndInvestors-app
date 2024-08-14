@@ -772,7 +772,7 @@
   }
 
   .form-group input {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -975,6 +975,7 @@
   }
 
   .search-bar input {
+    width: 95%;
     margin-bottom: 10px;
   }
 
@@ -1016,7 +1017,7 @@
   }
 
   .search-bar input {
-    width: 100%;
+    width: 90%;
   }
 
   .search-bar button {
