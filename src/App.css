@@ -91,7 +91,7 @@
   .premium-header nav ul li a:hover::before {
     width: 100%;
   }
-
+  
 
 
 
@@ -594,10 +594,20 @@
 }
 
 
-.social-links {
+.social-links  {
   display: flex;
   gap: 15px;
   margin-top: 20px;
+}
+
+.social-links a {
+  color: #188336;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px);
 }
 
 .social-link {
@@ -679,7 +689,8 @@
   }
 
   .social-links {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     gap: 10px;
   }
 }

@@ -10,6 +10,11 @@ import global from "../assets/image/global.jpg";
 import invest from "../assets/image/invest.jpg";
 import future from "../assets/image/future.jpg";
 import fund from "../assets/image/fund.jpg";
+import { CiLinkedin } from "react-icons/ci";
+import { MdMarkEmailUnread } from "react-icons/md";
+import { FaTwitter } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+
 
 const sampleData = {
   1: {
@@ -205,7 +210,7 @@ function EntrepreneurDetails() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    LinkedIn
+                    <CiLinkedin></CiLinkedin>
                   </a>
                 )}
                 {entrepreneur.socialLinks.twitter && (
@@ -214,7 +219,7 @@ function EntrepreneurDetails() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Twitter
+                    <FaTwitter/>
                   </a>
                 )}
                 {entrepreneur.socialLinks.website && (
@@ -223,7 +228,7 @@ function EntrepreneurDetails() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Website
+                    <CgWebsite/>
                   </a>
                 )}
               </div>
