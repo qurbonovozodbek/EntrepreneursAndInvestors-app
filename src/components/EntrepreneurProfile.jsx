@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function EntrepreneurProfile({ id, name, business, description }) {
+function EntrepreneurProfile({ id, name, business, description, image }) {
   return (
     <div className="profile-card">
       <h3>{name}</h3>

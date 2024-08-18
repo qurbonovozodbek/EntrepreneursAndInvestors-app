@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { IoMdExit } from "react-icons/io";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 function Header() {
   const [link, setLink] = useState(false);
@@ -43,11 +45,14 @@ function Header() {
                 </Link>
                 {openDropDown && userData && (
                   <div className={`dropdown ${openDropDown ? 'dropdown-enter' : 'dropdown-exit'}`}>
-                    {userData.picture && <img src={userData.picture} alt="Profile" className="profile-picture" />}
-                    <p>Name: <span>{userData.name}</span></p>
-                    <p>Email: <span>{userData.email}</span></p>
-                    <p>Phone: <span>{userData.phone}</span></p>
-                    <button onClick={handleLogout} className="logout-button">Logout</button>
+                    {userData.picture && <img src={userData.picture} alt="Profile" className="picture" />}
+                    <div className="text">
+                    <p>{userData.name}</p>
+                    <p>+98{userData.phone}</p>
+                    <button onClick={handleLogout} className="logout-button">Logout <IoMdExit />
+                    </button>
+                    </div>
+                    <div className="dropClose" onClick={handleDropDown} > <IoMdCloseCircleOutline /> </div>
                   </div>
                 )}
               </li>
